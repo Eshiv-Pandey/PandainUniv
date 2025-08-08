@@ -1,0 +1,16 @@
+<%- layout("/layouts/boilerplate.ejs") %>
+<div class="row show-row">
+  <%for(let app of application){ %>
+  <div class="card col-1 offset-2 m-2 " style="width: 18rem;">
+    <img src="<%=getunivimage(app.University)%>" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= app.University %></h5>
+      <p class="card-text"><%= app.Program %></p>
+      <p>Course : <%= app.Degree %><br>
+         Season: <%= app.Season %><br>
+      </p>
+      <p class="badge text-bg-primary"><%= app.Status %></p>
+    </div>
+  </div>
+  <% } %>
+</div>

@@ -1,0 +1,12 @@
+<!-- FORUM PAGE -->
+
+<%- layout("/layouts/boilerplate.ejs") %>
+<div class="row forum">
+  <div class="col-8 offset-2 mt-2">
+    <h2>Search your application</h2>
+    <form method="GET" action="/home/fetch">
+      <input type="text" name="email" placeholder="Enter your email">
+      <button class="btn btn-danger m-2">Submit</button>
+    </form>
+  </div>
+</div>

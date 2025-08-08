@@ -1,0 +1,79 @@
+<%- layout("/layouts/boilerplate.ejs") %>
+<form method="POST" action="/home/forum">
+  <div class="row">
+    <div class="col-8 offset-2 mt-3">
+      <h2> Submit Your Results .</h2><br>
+      <h4>Application Details</h4>
+      <br>
+      <div class="row">
+        <div class=" col-md-6 form-check">
+          <label for="username" class="form-label">username</label>
+          <input type="text" class="form-control" name="username" required placeholder="Enter username">
+        </div>
+        <div class=" col-md-6 form-check">
+          <label for="email" class="form-label">email</label>
+          <input type="text" class="form-control" name="email" required placeholder="Enter your email">
+        </div>
+        <div class=" col-12 form-check">
+          <label for="University" class="form-label">University</label>
+          <input type="text" class="form-control" name="University" required placeholder="Enter University's Name">
+        </div>
+  
+        <div class=" form-check">
+          <label for="Program" class="form-label">Program</label>
+          <input type="text" class="form-control" name="Program" required placeholder="Enter Program's Name">
+        </div>
+  
+        <div class=" form-check">
+          <label for="Degree" class="form-label">Degree</label>
+          <input type="text" class="form-control" name="Degree" required placeholder="Enter Degree's Name">
+        </div>
+  
+      </div>
+      
+      <div class="row">
+        <div class=" col-md-6 form-check">
+          <label for="Season" class="form-label">Season</label>
+          <input type="text" class="form-control" name="Season" required placeholder="Enter Season">
+        </div>
+        <div class=" col-md-6 form-check">
+          <label for="Status" class="form-label">Status</label>
+          <input type="text" class="form-control" name="Status" required placeholder="Enter Status Name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class=" col-md-6 form-check">
+          <label for="Date of Notification" class="form-label">Date of Notification</label>
+          <input type="date" class="form-control" name="Date" required placeholder="Enter Date of Notification">
+        </div>
+    
+        <div class=" form-check">
+          <label for="GPA" class="form-label">GPA</label>
+          <input type="number" step="0.01" class="form-control" name="GPA" required placeholder="Enter GPA">
+          
+        </div>
+        <div class="row">
+          <div class="col-md-4 form-check">
+            <label for="General GRE" class="form-label">General GRE</label>
+            <input type="number" step="0.01" class="form-control" name="General_GRE" required placeholder="Enter General GRE">
+          </div>
+          <div class="col-md-4 form-check">
+            <label for="Verbal GRE" class="form-label">Verbal GRE</label>
+            <input type="number" step="0.01" class="form-control" name="Verbal_GRE"  required placeholder="Enter Verbal GRE">
+          </div>
+          <div class="col-md-4 form-check">
+            <label for="AW GRE" class="form-label">AW GRE</label>
+            <input type="number" step="0.01" class="form-control" name="Aw_GRE"  required placeholder="Enter AW GRE">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary mt-3">Submit</button>
+    </div>
+    
+  </div> 
+</form>
+
+ 
+  
