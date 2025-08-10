@@ -57,7 +57,7 @@ async function main(){
 
 //setting up ROOT path no need waise toh hehe
 app.get("/",(req,res)=>{
-  res.send("working!!!");
+  res.render("home.ejs");
 });
 
 //setting up Home route 
